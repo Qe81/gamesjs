@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/common.css">
+  <link rel="stylesheet" href="/styles/split.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <script src="/socket.io/socket.io.js"></script>
+  <script defer type="module" src="/javascript/game.mjs"></script>
+  <title>Game</title>
+</head>
+
+<body>
+  
+  <div id="root">
+    <div id="rooms-page" class="full-screen">
+      <h1>Test screen</h1>
+
+
+       <!-- Card container -->
+       <div id="cards-container" class="full-screen">
+
+       </div>
+       <!-- End card container -->
+       
+    </div>
+    <div id="game-page" class="full-screen display-none">
+      <h1>Game Page</h1>
+      <button id="leave-button">Back to rooms</button>
+
+      <div class="game-container full-screen">
+        <div id="user-list">
+        </div>
+        <div class="game-area" id="game-area">
+          <div class="game-area-content">
+            <button id="game-text">READY</button>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+</body>
+
+</html>
